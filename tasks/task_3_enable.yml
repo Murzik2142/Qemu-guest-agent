@@ -1,0 +1,5 @@
+- name: Ensure qemu-guest-agent service is enabled and started
+  service:
+    name: qemu-guest-agent
+    enabled: yes
+    state: started

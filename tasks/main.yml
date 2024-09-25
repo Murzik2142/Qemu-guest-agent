@@ -1,0 +1,10 @@
+---
+# tasks file for Qemu-guest-agent
+- name: Test proxmox
+  ansible.builtin.import_tasks: task_1_preinit.yml
+  
+- name: Install qemu-guest-agent
+  ansible.builtin.import_tasks: task_2_install.yml
+
+- name: Ensure qemu-guest-agent service
+  ansible.builtin.import_tasks: task_3_enable.yml
