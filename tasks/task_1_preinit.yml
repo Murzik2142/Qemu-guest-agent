@@ -4,3 +4,8 @@
 - name: Print message
   ansible.builtin.debug:
     msg: Hello world
+
+- name: Wait for VMs to be accessible
+  wait_for_connection:
+    delay: 10
+    timeout: 300
